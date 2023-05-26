@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #2c3e50;
+}
+
+nav {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 590px;
+    background: #34495e;
+    font-size: 0;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border-radius: 25px;
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color:lightseagreen;
+    border-radius: 8px;
+}
+
+nav a:hover~.animation {
+    background-color:lightseagreen;
+    width: 100%;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    background-color: #2ccaed;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    width: 0;
+    left: 0;
+    opacity: 100px; /* Adjust the transparency as desired */
+}
+
+nav a:nth-child(1) {
+    width: 100px;
+}
+
+nav a:nth-child(2) {
+    width: 110px;
+}
+
+nav a:nth-child(3) {
+    width: 100px;
+}
+
+nav a:nth-child(4) {
+    width: 160px;
+}
+
+nav a:nth-child(5) {
+    width: 120px;
+} 
